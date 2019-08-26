@@ -3,7 +3,7 @@
 class Request
 {
     //    public $serverUrl = 'https://api.safimoney.com/api/v2';
-    public $serverUrl = 'https://test.itsafimoney.com';
+    public $serverUrl = 'https://test.itsafimoney.com/api/v2';
 
     function validateParams(Array $params,Array $arrayKeys)
     {
