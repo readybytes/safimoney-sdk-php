@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         empty($_POST["cancel_url"])) {
         $err = "Fill out all the fields";
     }else{
-        require_once('vendor/autoload.php');
-        $a = new Safimoney\Redirect();
+        require_once('init.php');
+        $a = new Safimoney\Redirect('fe14bcc0-c264-11e9-b7c4-c39f4af53198','69.B1GZaQ9WwE');
 
         $payload = [
             'order_id' => $_POST["order_id"],

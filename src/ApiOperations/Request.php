@@ -5,6 +5,7 @@ class Request
     //    public $serverUrl = 'https://api.safimoney.com/api/v2';
     public $serverUrl = 'https://test.itsafimoney.com/api/v2';
 
+
     function validateParams(Array $params,Array $arrayKeys)
     {
         foreach($arrayKeys as $key){
@@ -18,10 +19,6 @@ class Request
 
     public function makeApiCall(Array $params, $namespace, $action, $credentials, $needFullResponse = false)
     {
-        if(empty($credentials)){
-            $credentials = include __DIR__.'/config.php';
-        }
-
         /**
          * check if credentials are empty
          */
